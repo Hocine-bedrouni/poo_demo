@@ -7,7 +7,7 @@ class Home extends AbstractController
     {
     }
 
-    public function homepage()
+    public function home()
     {
     $this->render('home');
     }

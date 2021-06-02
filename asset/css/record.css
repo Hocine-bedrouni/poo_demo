@@ -1,20 +1,20 @@
 
 
 
-/*div img{*/
-/*    width: 250px !important;*/
+img.list_img{
+    width: 50% !important;
 
-/*}*/
+}
 
-/*img.img_accueil{*/
-/*    padding-left: 500px;*/
-/*    margin-top: 100px;*/
-/*}*/
+img.img_accueil{
+    padding-left: 500px;
+    margin-top: 100px;
+}
 
-/*body{*/
-/*    background-image: url("../img/fond13.jpg");*/
-/*    background-size: cover;*/
-/*}*/
+body{
+    background-image: url("../img/fond13.jpg");
+    background-size: cover;
+}
 
 /* #Titre{*/
 /*    !*text-transform: uppercase;*!*/
@@ -24,37 +24,37 @@
 /*    color: #fcfdfd;*/
 /*}*/
 
-/* #Artist{*/
-/*     font-size: 16px;*/
-/*     !*font-weight: bold;*!*/
-/*     color: #ffffff;*/
-/* }*/
+ /*#Artist{*/
+ /*    font-size: 16px;*/
+ /*    !*font-weight: bold;*!*/
+ /*    color: #ffffff;*/
+ /*}*/
 
-/*span#Label{*/
-/*    font-size: 16px;*/
-/*    !*font-weight: bold;*!*/
-/*    color: #ffffff;*/
-/*}*/
+span#Label{
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: #ffffff;
+}
 
-/*span#Annee{*/
-/*    font-size: 16px;*/
-/*    !*font-weight: bold;*!*/
-/*    color: #ffffff;*/
-/*}*/
+span#Annee{
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: #ffffff;
+}
 
-/*span#Genre{*/
-/*    font-size: 16px;*/
-/*    !*font-weight: bold;*!*/
-/*    color: #ffffff;*/
-/*}*/
+span#Genre{
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: #ffffff;
+}
 
-/*label, p{*/
-/*    color: #ffffff;*/
-/*    font-size: large;*/
-/*}*/
-/*H1{*/
-/*    color: #ffffff;*/
-/*}*/
+label, p{
+    color: #ffffff;
+    font-size: large;
+}
+H1{
+    color: #ffffff;
+}
 
 /*div.row{*/
 /*    width:72%;*/

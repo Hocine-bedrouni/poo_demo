@@ -7,11 +7,11 @@ require_once (ROOT .'/app/ModelParrent.php');
 $uri = $_SERVER['REQUEST_URI'];
 $param_uri = explode('/', $uri);
 
-var_dump($param_uri);
+//var_dump($param_uri);
 
 if ($param_uri[1] != '') {
     $controller = ucfirst($param_uri[1]);
-    $method = isset($param_uri[2]) ? $param_uri[2] : 'index';
+    $method = isset($param_uri[2]) ? $param_uri[2] : 'liste';
     if (file_exists(ROOT . '/controllers/' . $controller . '.php')) {
         require_once(ROOT . '/controllers/' . $controller . '.php');
         $controller = new $controller;
@@ -19,6 +19,7 @@ if ($param_uri[1] != '') {
             unset($param_uri[0]);
             unset($param_uri[1]);
             unset($param_uri[2]);
+            var_dump($param_uri);
             //fonction classe et méthode utilisé
             call_user_func_array([$controller, $method], $param_uri);
         } else {
