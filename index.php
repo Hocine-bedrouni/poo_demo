@@ -19,7 +19,7 @@ if ($param_uri[1] != '') {
             unset($param_uri[0]);
             unset($param_uri[1]);
             unset($param_uri[2]);
-            var_dump($param_uri);
+//            var_dump($param_uri);
             //fonction classe et méthode utilisé
             call_user_func_array([$controller, $method], $param_uri);
         } else {
@@ -35,7 +35,7 @@ if ($param_uri[1] != '') {
 else{
         require_once(ROOT . '/controllers/Home.php');
         $home = new Home;
-        call_user_func_array([$home, 'homepage'], $param_uri);
+        call_user_func_array([$home, 'home'], $param_uri);
     }
 
 //var_dump($controller);

@@ -1,6 +1,6 @@
 <?php
-var_dump($disc);
-var_dump($artist);
+//var_dump($disc);
+//var_dump($artist);
 //var_dump($artistDetail);
 //var_dump($discDetail);
 ?>
@@ -8,7 +8,7 @@ var_dump($artist);
 <div class="container">
     <div class="row mt-5">
         <div class="col-sm-12">
-            <form class="col col-lg-12" action="#" method="post" enctype="multipart/form-data">
+            <form class="col col-lg-12" action="/discs/modiffier/<?= $disc->disc_id ?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="disc_id" value="<?= $disc->artist_name ?>"
                 <div class="form-group">
                     <label for="titre">Titre :</label>
@@ -22,13 +22,10 @@ var_dump($artist);
                         <?php
                         foreach ($artist as $val_art) // Pour afficher la liste sous forme d'un menu déroulant
                         {
-//
-                            ?>
+                        ?>
                             <option value="<?= $val_art->artist_id ?>" <?=  $val_art->artist_id == $disc->artist_id ? 'selected' : ''; ?>
                             > <?= $val_art->artist_name ?> </option>
-
-
-                            <?php
+                        <?php
                         }
                         ?>
 
@@ -57,8 +54,9 @@ var_dump($artist);
 
 
                 <!-- TELECHARGEMENT IMAGE -->
+                <p></p>
                 <div class="img_inser"></div>
-                <p class="txt_img">Photo du article :</p>
+                <p class="txt_img">Photo du disque :</p>
 
                 <input type="hidden" name="MAX_FILE_SIZE" value="104857600"/>
 
@@ -66,8 +64,8 @@ var_dump($artist);
         </div>
 
         <div class="form-group">
-            <a href="../discDetail/<?=$disc->disc_id ?>" class="btn btn-dark m-0">Retour</a>
-            <input type="submit" class="btn btn-warning m-0" value="Actualiser">
+            <a href="../discDetail/<?= $disc->disc_id ?>" class="btn btn-dark m-0">Retour</a>
+            <button type="submit" class="btn btn-warning m-0" name="modifier">modifier</button>
         </div>
 
         </form>

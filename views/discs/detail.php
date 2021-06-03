@@ -1,9 +1,12 @@
+<?php
+var_dump($discDetail);
+?>
 
 <H1>Detail du disc : "<?= $discDetail->disc_title ?>"</H1>
 <div class="container">
     <div class="row mt-5">
         <div class="col-sm-12">
-            <form action ="#" class="form_act justify-content-center" method="post">
+            <form action ="/discs/erase/<?= $discDetail->disc_id?>" class="form_act justify-content-center" method="post">
 
 
                 <label for="titre">Titre : </label>
@@ -38,12 +41,12 @@
 <!--
 
                     <!-- Quand on clique sur le bouton modifier on exécute le script du fichier sur lequel on fait un lien et on récupère l'ID avec ?pro_id=<?= $disc->disc_id?> -->
-                    <a href="/discs/modif_disc/<?= $discDetail->disc_id?>" class="btn btn-warning m-0">Modifier</a>
+                    <a href="/discs/modiffier/<?= $discDetail->disc_id?>" class="btn btn-warning m-0">Modifier</a>
 
                     <!-- Quand on clique sur le bouton supprimer on exécute le script du fichier sur lequel on fait un lien et on récupère l'ID avec ?pro_id=<?= $disc->disc_id?> -->
-                    <a href="../controllers/script_supp.php?disc_id=<?= $discDetail->disc_id?>" class="btn btn-danger m-0" onclick="return confirm('Etes-vous certain(e) de vouloir supprimer le produit ?')">Supprimer</a>
-
+                    <button type="submit" class="btn btn-danger m-0" name="envoie">Supprimer</></button>
                 </div><br>
+            </form>
         </div>
     </div>
 </div>

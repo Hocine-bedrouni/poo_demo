@@ -16,19 +16,19 @@ body{
     background-size: cover;
 }
 
-/* #Titre{*/
-/*    !*text-transform: uppercase;*!*/
-/*    font-size: 20px;*/
-/*     font-variant: small-caps;*/
-/*    !*font-weight: bold;*!*/
-/*    color: #fcfdfd;*/
-/*}*/
+ #Titre{
+    /*text-transform: uppercase;*/
+    font-size: 20px;
+     font-variant: small-caps;
+    /*font-weight: bold;*/
+    color: #fcfdfd;
+}
 
- /*#Artist{*/
- /*    font-size: 16px;*/
- /*    !*font-weight: bold;*!*/
- /*    color: #ffffff;*/
- /*}*/
+ #Artist{
+     font-size: 16px;
+     /*font-weight: bold;*/
+     color: #ffffff;
+ }
 
 span#Label{
     font-size: 16px;

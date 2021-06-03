@@ -39,16 +39,4 @@ abstract class ModelParrent
         return $result->fetchAll(PDO::FETCH_OBJ);
     }
 
-
-
-    public function delete($id)
-    {
-        $query ="DELETE FROM record.disc WHERE disc_id=:id";
-        $result = $this->connex->prepare($query);
-        $result->bindValue(':id', $id, PDO::PARAM_INT);
-        $result->execute();
-
-    }
-
-
  }

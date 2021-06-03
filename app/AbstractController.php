@@ -9,7 +9,10 @@ abstract class abstractController
         return new $model;
     }
 
-
+    /**
+     * @param string $file
+     * @param array $data
+     */
     public function render(string $file, array $data = []){
         //chaque valeur est associé à une variable
         extract($data);

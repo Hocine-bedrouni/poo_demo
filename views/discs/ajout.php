@@ -1,8 +1,9 @@
+
 <H1>Ajout</H1>
 <div class="container">
     <div class="row mt-5">
         <div class="col-sm-12">
-            <form class="col col-lg-10 mx-auto" action="../Controllers/script_ajout.php" method="POST" enctype="multipart/form-data">
+            <form class="col col-lg-10 mx-auto" action="/discs/add" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="Titre">Titre</label>
                     <input type="text" class="form-control" placeholder="--Sélectionner un titre--" id="Titre" name="Titre">
@@ -10,7 +11,7 @@
                 </div>
                 <div class="form-group">
                     <label for="Artist">Artiste :</label>
-                    <select class="custom-select" name="Artist" id="Artiste">
+                    <select class="form-control" name="Artist" id="Artiste">
                         <option value="">-- Veuillez sélectionner un artiste --</option>
                         <?php
                         foreach ($artist as $val_art) // Permet l'affichage du menu déroulant pour obtenir la liste des artistes
